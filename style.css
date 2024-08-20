@@ -1,0 +1,780 @@
+/* Header Starts */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 69px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    background-color: #fff; 
+}
+
+header div {
+    float: left;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    margin-left: 200px;
+    padding: 20px;
+
+}
+
+header .nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 200px;
+}
+
+header .nav ul {
+    list-style: none;
+}
+
+header .nav ul li {
+    float: left;
+    padding-right: 40px;
+    padding-top: 10px;
+}
+
+header .nav ul li a {
+    text-decoration: none;
+    color: rgb(41 41 41);
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 798;
+    letter-spacing: 0.03rem;
+}
+
+header .nav ul li a:hover {
+    color: #789fff;
+    cursor: pointer;
+    transform: scale(1.5);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.checkbtn {
+    display: none;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.9);
+    float: right;
+    line-height: 80px;
+    margin-right: -170px;
+}
+
+/* For ids, we use # */
+#check {
+    display: none;
+}
+/* Header Ends */
+
+/* SECTION 1: INTRO Starts */
+.section1 {
+    background-color: #f9f9ff;
+    width: 100%;
+    height: 762px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.half1, .half2 {
+    width: 50%;
+}
+
+.half1 {
+    margin-left: 230px;
+    margin-bottom: 120px;
+}
+
+.half2 {
+    padding-right: 160px;
+    margin-top: 50px;
+}
+
+.half2 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.half1 h3 {
+    font-weight: normal;
+    margin-bottom: -6px;
+}
+
+.half1 h1 {
+    font-size: 60px;
+}
+
+.half1 p {
+    color: rgb(78, 78, 78, 0.7);
+    width: 90%;
+    font-size: 12px;
+}
+
+.half1 input {
+    padding: 8px 27px;
+    background-color: #8393ff;
+    border: 1px solid #8393ff;
+    outline: none;
+    color: white;
+    font-size: 15px;
+}
+
+.half1 input:hover {
+    box-shadow: 5px 10px 30px rgba(130, 147, 255, 0.5);
+    transition: all 0.5s ease-in 0.03s;
+    outline: none;
+    cursor: pointer;
+}
+/* SECTION 1: INTRO Ends */
+
+/* SECTION 2: Starts */
+.section2 {
+    width: 100%;
+    height: 615px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section2 div {
+    width: 40%;
+    /* That implies, the 2 div contents each taking 40% width of the total available wodth, utilizes in total: 80% of the entire width on-screen. */
+    
+    margin: 0px auto;
+    /* This has been used to ensure a gap between  the image and the text; since EACH div is made to be in the center position of it's own 40% width, not left-aligned (as usual). */
+}
+
+.section2 img {
+    max-width: 90%;
+    /* The width assigned to that image previously, it will be able to utilize 90% or, 9/10 of total of its already allocated width. */
+
+    height: auto;
+    /* For bringing the image at the center of top-bottom within that img's div. */
+}
+
+.section2 .img2 {
+    padding-left: 150px;
+    /* This has been done to bring the img a bit more towards the right, by increasing its left-portion size; We could've also achieved similar results by applying margin-left: +ve value   OR   margin-right: -ve value. */
+}
+
+.text2 h3 {
+    font-weight: normal;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 16px;
+}
+
+.text2 h1 {
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.text2 p {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.6);
+    width: 81%;
+}
+
+.text2 input {
+    font-size: 15px;
+    padding: 9px 15px;
+    outline: none;
+    color: white;
+    background-color: #8393ff;
+    border: none;
+}
+
+.text2 input:hover {
+    box-shadow: 5px 10px 30px rgba(130, 147, 255, 0.5);
+    transition: all 0.5s ease-in 0.03s;
+    outline: none;
+    cursor: pointer;
+}
+/* SECTION 2: Ends */
+
+/* SECTION 3: Starts */
+.section3 {
+    width: 100%;
+    height: 650px;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+.firsttext h1 {
+    font-size: 33px;
+    line-height: 10px;
+}
+
+.firsttext p {
+    width: 588px;
+    color: rgba(0, 0, 0, 0.6);
+    margin: 0 auto;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+/* The service-section can be done by flex/ div/ grid */
+.service {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 45px;
+}
+
+.ser1, .ser2 {
+    width: 100%;
+    overflow: hidden;
+}
+
+.ser2 {
+    padding-top: 30px;
+}
+
+.ser1 div, .ser2 div {
+    width: 32%;
+    float: left;
+    /* Pasha pashi chole ashbe */
+
+    padding: 5px;
+    margin: 0 auto;
+    padding-bottom: 27px;
+    padding-top: 27px;
+}
+
+.service i {
+    font-size: 39px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.service h1 {
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 22px;
+}
+
+.service p {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 12px;
+    margin: auto 15px;
+}
+
+.ser1 div:hover {
+    background-color: #8393ff;
+}
+
+.ser2 div:hover {
+    background-color: #8393ff;
+}
+
+.ser1 div:hover i {
+    color: white;
+    transform: rotate(-12deg);
+    transition: all ease-out 0.3s;
+}
+
+.ser1 div:hover h1 {
+    color: white;
+}
+
+.ser1 div:hover p {
+    color: white;
+    transform: scale(1.11);
+    transition: all ease-out 0.3s;
+}
+
+.ser2 div:hover i {
+    color: white;
+    transform: rotate(-12deg);
+    transition: all ease-out 0.3s;
+}
+
+.ser2 div:hover h1 {
+    color: white;
+}
+
+.ser2 div:hover p {
+    color: white;
+    transform: scale(1.11);
+    transition: all ease-out 0.3s;
+}
+/* SECTION 3: Ends */
+
+/* SECTION 4: Starts */
+.section4 {
+    width: 100%;
+    height: 300px;
+    background-color: #8393ff;
+}
+
+.section4 div {
+    float: left;
+    width: 20%;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+    left: 159px;
+}
+
+.section4 h1 {
+    font-size: 45px;
+    line-height: 0px;
+}
+
+.section4 h1 {
+    font-size: 45px;
+    line-height: 0px;
+    color: white;
+}
+
+.section4 p {
+    text-align: center;
+    color: white;
+}
+/* SECTION 4: Ends */
+
+/* SECTION 5: Portfolio Part Starts */
+.section5 {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.section5 .text3 {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.section5 .text3 h1 {
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.section5 .text3 p {
+    color: rgba(0, 0, 0, 0.7);
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
+.section5 .imgg {
+    width: 75%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* wrap: To make contents appear in the next line given that the previous contents had utilized fully the line before. */
+
+    margin: 0 auto;
+}
+
+.section5 .imgg div {
+    width: 340px;
+    height: 339px;
+    padding-bottom: 120px;
+    text-align: center;
+}
+
+.section5 .imgg h1 {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.section5 .imgg p {
+    color: rgba(0, 0, 0, 0.7);
+    line-height: 0px;
+}
+
+.section5 figure {
+    background: linear-gradient(40deg, #8490ff 40%, #62bdf6 100%);
+    width: 340px;
+    height: 339px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 6%;
+}
+
+.section5 figure:hover img{
+    opacity: 0.3;
+    transition: all 0.3s ease-in;
+}
+/* SECTION 5: Portfolio Part Ends */
+
+/* SECTION 6: Pricing Table Starts */
+.section6 {
+    width: 100%;
+    height: 700px;
+    padding-top: 50px;
+}
+
+.section6 .text4 {
+    text-align: center;
+    padding: 2% 0;
+
+}
+
+.section6 .text4 h1 {
+    font-size: 40px;
+    line-height: 0;
+    padding-top: 15px;
+}
+
+.section6 .text4 p {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.section6 .card {
+    width: 75%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.section6 .card h2 {
+    margin-top: -9px;
+    padding-bottom: 21px;
+}
+
+.section6 .card p {
+    font-size: 12px;
+}
+
+.section6 .card1 {
+    width: 300px;
+    height: 597px;
+    background-color: rgb(249, 249, 255);
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.section6 .card1 h1 {
+    font-size: 50px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+
+}
+
+.section6 .card1 .price {
+    font-size: 42px;
+}
+
+.section6 .card1 input {
+    outline: none;
+    background-color: #8393ff;
+    color: white;
+    font-size: 25px;
+    padding: 6px 60px;
+    font-weight: bold;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.section6 .card1:hover {
+    background-color: #8393ff;
+    color: white !important;
+    transition: all 0.25s ease-in;
+    transform: scale(1.05);
+    border: 1px solid rgba(130, 147, 255, 0.5);
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.5);
+}
+
+.section6 .card1:hover input {
+    color: rgba(0, 0, 0, 0.9);
+    background-color: white;
+    transition: all 0.25s ease-in;
+}
+/* SECTION 6: Pricing Table Ends */
+
+/* FOOTER Starts */
+footer {
+    background-color: rgb(4, 9, 30);
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    color: white;
+    margin-top: 200px;
+}
+
+footer .foot {
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+
+footer .foot .foot1 p {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+footer .foot .foot1 input {
+    font-size: 15px;
+    outline: none;
+    border: none;
+    padding: 10px 151px 10px 10px;
+}
+
+footer .foot .foot1 button {
+    font-size: 18px;
+    color: white;
+    background-color: #8393ff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 7px 8px 9.2px 8px;
+    margin-left: -5px;
+    margin-top: 4px;
+}
+
+footer .foot .foot1 i {
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 auto;
+    padding-top: 8px;
+    padding-right: 18px;
+}
+
+footer .foot .foot1 i:hover {
+    color: #8393ff;
+    transform: scale(1.5);
+    transition: all ease-in-out 0.3s;
+
+}
+/* FOOTER Ends */
+
+/* Small Devices start from 768px max */
+@media (max-width: 768px) {
+
+    header {
+        width: 100%;
+        height: auto;
+    }
+
+    header .logo {
+        margin-left: 30px;
+        padding: 20px;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    .checkbtn:hover {
+        cursor: pointer;
+    }
+
+    header .nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #F9F9FF;
+        top: 54px;
+        left: -200%;
+        transition: all 0.1s;
+    }
+
+    header .nav ul li {
+        line-height: 30px;
+        clear: both;
+        margin-top: 15px;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+    header .nav ul li a {
+        font-size: 21px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .section1 {
+        width: 100%;
+        display: block;
+        height: auto;
+        margin-top: 75px;
+    }
+
+    .section1 .half1 {
+        margin: auto;
+        padding: 0px;
+    }
+
+    .section1 .half1  h3 {
+        font-size: 15px;
+    }
+
+    .half1 h1 {
+        font-size: 30px;
+    }
+
+    .half2 img {
+        margin-left: 120px;
+        margin-top: 30px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .section2 {
+        display: block;
+        width: 100%;
+        height: 100vh;
+        top: 150px;
+        position: relative;
+    }
+
+    .section2 .img2 img {
+        position: relative;
+        right: 120px;
+    }
+
+    .section2 div {
+        width: 100%;
+    }
+
+    .text2 {
+        position: relative;
+        left: 15px;
+        text-align: center !important;
+    }
+
+    .text2 h3 {
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.8);
+    }
+
+    .text2 h1 {
+        font-size: 30px;
+        color: rgba(0, 0, 0, 0.9);
+    }
+
+    .text2 p {
+        font-size: 15px;
+        color: rgba(0, 0, 0, 0.9);
+        margin-left: 50px !important;
+    }
+
+    .section3 {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 400px;
+        /* Bringing is 400px down from the topmost peak of the site so that it cannot disturb the other sections by overlapping on them, no matter how much we resize the tab/ screen by height or width. */
+    }
+
+    .firsttext h1 {
+        font-size: 30px;
+        color: rgba(0, 0, 0, 0.9);
+    }
+
+    .firsttext p {
+        width: 80%;
+    }
+
+    .ser1 div, .ser2 div {
+        clear:left;
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    /* .ser2 div {
+        clear:left;
+        position: relative;
+        width: 100%;
+        height: auto;
+    } */
+
+    .section4 {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        top: 498px;
+    }
+
+    .section4 div {
+        clear: left;
+        width: 33%;
+        margin: auto;
+    }
+
+    .section4 div p {
+        margin-bottom: 50px;
+    }
+
+    .section5 {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 498px;
+    }
+
+    .section6 {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        top: 498px;
+    }
+
+    .section6 .text4 h1 {
+        font-size: 35px;
+        font-size: 35px; 
+    }
+    .section6 .text4 p {
+        width: 80%;
+        margin: auto;
+    }
+
+    .section6 .card {
+        display: block;
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        left: 90px;
+    }
+
+    .card1 {
+        margin-top: 50px;
+    }
+
+    footer {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        top: 111em;
+    }
+
+    footer .foot {
+        display: block;
+        position: relative;
+        top: 100px;
+    }
+
+    footer .foot .foot1 {
+        padding-bottom: 51px;
+    }
+
+    .foot1 .abp {
+        width: 80%;
+    }
+
+    footer .foot .foot1 button {
+        margin-top: 24px;
+        margin-left: 0.5px;
+    }
+
+    footer .foot .foot1 i {
+        margin-left: 6px;
+    }
+}
